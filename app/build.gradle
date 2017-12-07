@@ -1,0 +1,21 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+
+    defaultConfig {
+        applicationId 'com.bubenheimer.firedance'
+        minSdkVersion 24
+        targetSdkVersion 27
+        versionName '1.0'
+        versionCode 1
+        resConfigs 'en', 'en-rUS'
+    }
+
+    dependencies {
+        implementation 'com.google.firebase:firebase-core:11.6.2'
+    }
+}
+
+apply plugin: 'com.google.gms.google-services'
+
