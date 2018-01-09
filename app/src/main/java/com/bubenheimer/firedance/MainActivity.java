@@ -11,8 +11,8 @@ public final class MainActivity extends Activity {
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-//        final String iid = FirebaseInstanceId.getInstance().getId();
-//        Log.i(TAG, "FirebaseInstanceId.getInstance().getId() == " + iid);
+//        final String iid = InstanceID.getInstance().getId();
+//        Log.i(TAG, "InstanceID.getInstance().getId() == " + iid);
 
         startService(new Intent(this, FBService.class));
 
